@@ -16,6 +16,7 @@
 		EC9E7B0B23E1CFD9001418FA /* DelegateExampleTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B0A23E1CFD9001418FA /* DelegateExampleTableViewTests.swift */; };
 		EC9E7B1823E1D427001418FA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B1723E1D427001418FA /* Data.swift */; };
 		EC9E7B3723E21365001418FA /* MyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B3623E21365001418FA /* MyDelegate.swift */; };
+		EC9E7B3923E21D41001418FA /* ParsedTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B3823E21D41001418FA /* ParsedTweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EC9E7B0C23E1CFD9001418FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9E7B1723E1D427001418FA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		EC9E7B3623E21365001418FA /* MyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDelegate.swift; sourceTree = "<group>"; };
+		EC9E7B3823E21D41001418FA /* ParsedTweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedTweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				EC9E7B0123E1CFD8001418FA /* Info.plist */,
 				EC9E7B1723E1D427001418FA /* Data.swift */,
 				EC9E7B3623E21365001418FA /* MyDelegate.swift */,
+				EC9E7B3823E21D41001418FA /* ParsedTweet.swift */,
 			);
 			path = DelegateExampleTableView;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9E7B3923E21D41001418FA /* ParsedTweet.swift in Sources */,
 				EC9E7AF823E1CFD8001418FA /* ViewController.swift in Sources */,
 				EC9E7AF423E1CFD8001418FA /* AppDelegate.swift in Sources */,
 				EC9E7AF623E1CFD8001418FA /* SceneDelegate.swift in Sources */,
