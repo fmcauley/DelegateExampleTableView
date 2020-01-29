@@ -19,6 +19,11 @@ class ViewController: UITableViewController {
         tableView.delegate = myDelegate
         
         // Do any additional setup after loading the view.
+        reloadTweets()
+    }
+    
+    func reloadTweets() {
+        tableView.reloadData()
     }
 
 

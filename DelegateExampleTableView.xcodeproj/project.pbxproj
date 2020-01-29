@@ -17,6 +17,7 @@
 		EC9E7B1823E1D427001418FA /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B1723E1D427001418FA /* Data.swift */; };
 		EC9E7B3723E21365001418FA /* MyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B3623E21365001418FA /* MyDelegate.swift */; };
 		EC9E7B3923E21D41001418FA /* ParsedTweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B3823E21D41001418FA /* ParsedTweet.swift */; };
+		EC9E7B3B23E22B13001418FA /* ParsedTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7B3A23E22B12001418FA /* ParsedTweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EC9E7B1723E1D427001418FA /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		EC9E7B3623E21365001418FA /* MyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDelegate.swift; sourceTree = "<group>"; };
 		EC9E7B3823E21D41001418FA /* ParsedTweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedTweet.swift; sourceTree = "<group>"; };
+		EC9E7B3A23E22B12001418FA /* ParsedTweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedTweetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				EC9E7B1723E1D427001418FA /* Data.swift */,
 				EC9E7B3623E21365001418FA /* MyDelegate.swift */,
 				EC9E7B3823E21D41001418FA /* ParsedTweet.swift */,
+				EC9E7B3A23E22B12001418FA /* ParsedTweetCell.swift */,
 			);
 			path = DelegateExampleTableView;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			files = (
 				EC9E7B3923E21D41001418FA /* ParsedTweet.swift in Sources */,
 				EC9E7AF823E1CFD8001418FA /* ViewController.swift in Sources */,
+				EC9E7B3B23E22B13001418FA /* ParsedTweetCell.swift in Sources */,
 				EC9E7AF423E1CFD8001418FA /* AppDelegate.swift in Sources */,
 				EC9E7AF623E1CFD8001418FA /* SceneDelegate.swift in Sources */,
 				EC9E7B3723E21365001418FA /* MyDelegate.swift in Sources */,

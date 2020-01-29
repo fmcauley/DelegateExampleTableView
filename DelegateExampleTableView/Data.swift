@@ -42,6 +42,7 @@ class TableData : NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseId")
         let parsedTweet = parsedTweets[indexPath.row]
         cell?.textLabel?.text = parsedTweet.tweetText
+        cell?.detailTextLabel?.text = parsedTweet.tweetText
         return cell!
     }
 }
