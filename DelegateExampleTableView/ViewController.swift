@@ -20,6 +20,20 @@ class ViewController: UITableViewController {
         
         // Do any additional setup after loading the view.
         reloadTweets()
+        
+        let refresher = UIRefreshControl()
+        
+        refresher.addTarget(self, action: #selector(handleRefresh(sender:)), for: .valueChanged)
+        
+        refreshControl = refresher
+    }
+    
+    @IBAction func handleRefresh(sender: AnyObject?) {
+        
+        myDataSource.parsedTweets.append(
+            ParsedTweet(tweetText: "New Row", userName: "@refresh", createdAt: Date().description, userAvatarURL: myDataSource.defaultAvatarURL))
+            reloadTweets()
+            refreshControl?.endRefreshing()
     }
     
     func reloadTweets() {

@@ -12,6 +12,7 @@ import UIKit
 // need to sublcass NSObject when conforming to this protocol.
 class TableData : NSObject, UITableViewDataSource {
     
+    let defaultAvatarURL = URL(string:"https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")
     
     var parsedTweets = [
         ParsedTweet(tweetText: "iOS 13 is the new hottness",
@@ -22,11 +23,71 @@ class TableData : NSObject, UITableViewDataSource {
                     userName: "@fmcauley",
                     createdAt: "2015-06-30 6:36:21 EDT",
                     userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
-        
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
+        ParsedTweet(tweetText: "gas is somthing that we all have",
+                    userName: "@egg",
+                    createdAt: "2016-10-14 21:42:04 EDT",
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
         ParsedTweet(tweetText: "gas is somthing that we all have",
                     userName: "@egg",
                     createdAt: "2016-10-14 21:42:04 EDT",
                     userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"))
+        
         
     ]
     
@@ -39,7 +100,6 @@ class TableData : NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        cell.avatarImageView.image = UIImage(data:Data(contentsOf: parseTweet.userAvatarURL!))
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTweetCell") as! ParsedTweetCell
         let parseTweet = parsedTweets[indexPath.row]
         
