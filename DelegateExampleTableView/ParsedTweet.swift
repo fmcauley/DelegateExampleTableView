@@ -13,12 +13,12 @@ class ParsedTweet: NSObject {
     var tweetText : String?
     var userName : String?
     var createdAt : String?
-    var userAvatarURL : NSURL?
+    var userAvatarURL : URL?
     
     init(tweetText: String?,
          userName: String?,
          createdAt: String?,
-         userAvatarURL: NSURL?) {
+         userAvatarURL: URL?) {
         super.init()
         self.tweetText = tweetText
         self.userName = userName

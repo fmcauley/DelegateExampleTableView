@@ -17,16 +17,16 @@ class TableData : NSObject, UITableViewDataSource {
         ParsedTweet(tweetText: "iOS 13 is the new hottness",
                     userName: "@pragprog",
                     createdAt: "2014-08-20 16:44:30 EDT",
-                    userAvatarURL:NSURL( string: "https://media.idownloadblog.com/wp-content/uploads/2017/03/Twitter-new-2017-avatar-001.png")),
+                    userAvatarURL: URL( string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
         ParsedTweet(tweetText: "music is a thing",
                     userName: "@fmcauley",
                     createdAt: "2015-06-30 6:36:21 EDT",
-                    userAvatarURL:NSURL(string: "https://media.idownloadblog.com/wp-content/uploads/2017/03/Twitter-new-2017-avatar-001.png")),
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png")),
         
         ParsedTweet(tweetText: "gas is somthing that we all have",
                     userName: "@egg",
                     createdAt: "2016-10-14 21:42:04 EDT",
-                    userAvatarURL: NSURL(string: "https://media.idownloadblog.com/wp-content/uploads/2017/03/Twitter-new-2017-avatar-001.png"))
+                    userAvatarURL: URL(string: "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png"))
         
     ]
     
@@ -39,10 +39,21 @@ class TableData : NSObject, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseId")
-        let parsedTweet = parsedTweets[indexPath.row]
-        cell?.textLabel?.text = parsedTweet.tweetText
-        cell?.detailTextLabel?.text = parsedTweet.tweetText
-        return cell!
+//        cell.avatarImageView.image = UIImage(data:Data(contentsOf: parseTweet.userAvatarURL!))
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTweetCell") as! ParsedTweetCell
+        let parseTweet = parsedTweets[indexPath.row]
+        
+        do {
+           let imageData =  try Data(contentsOf: parseTweet.userAvatarURL!)
+                cell.userNameLabel.text = parseTweet.userName
+                cell.tweetTextLabel.text = parseTweet.tweetText
+                cell.createdAtLabel.text = parseTweet.createdAt
+                cell.imageView?.image = UIImage(data: imageData)
+                
+        } catch  {
+            print(error)
+        }
+        
+        return cell
     }
 }
