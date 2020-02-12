@@ -35,6 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print("Unexpected error: \(error).")
         }
+        
+        do {
+            try nourish(with: "Beet-Flavored Chips")
+        } catch {
+            print("Unexpected non-vending-machine-related error: \(error)")
+        }
        
         
        // this is needed

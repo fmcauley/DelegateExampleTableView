@@ -38,6 +38,14 @@ func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
        try vendingMachine.vend(itemNamed: snackName)
    }
 
+func nourish(with item: String) throws {
+    do {
+        try VendingMachine().vend(itemNamed: item)
+    } catch is VendingMachineError {
+        print("Invalid selection, out of stock, or not enough money.")
+    }
+}
+
 class VendingMachine {
     
     var inventory = [
