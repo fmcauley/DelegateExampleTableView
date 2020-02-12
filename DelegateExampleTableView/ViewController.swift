@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Social
+import Accounts
 
 class ViewController: UITableViewController {
     
@@ -38,6 +40,9 @@ class ViewController: UITableViewController {
     
     func reloadTweets() {
         tableView.reloadData()
+        
+        let accountStore = ACAccountStore()
+        let twitterAccountType = accountStore.accountType(withAccountTypeIdentifier: ACAccountTypeIdentifierTwitter)
     }
 
 

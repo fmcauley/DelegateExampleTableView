@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1006A623F48060003859AE /* TwitterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC1006A223F48026003859AE /* TwitterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC1006A823F480BD003859AE /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1006A323F48026003859AE /* TwitterCore.framework */; };
+		EC1006A923F480BD003859AE /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1006A223F48026003859AE /* TwitterKit.framework */; };
 		EC2AE5AB23E9F34C00625705 /* LongestSequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AE5AA23E9F34C00625705 /* LongestSequenceTest.swift */; };
 		EC9E7AF423E1CFD8001418FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7AF323E1CFD8001418FA /* AppDelegate.swift */; };
 		EC9E7AF623E1CFD8001418FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7AF523E1CFD8001418FA /* SceneDelegate.swift */; };
@@ -31,7 +34,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EC1006A123F47FB8003859AE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC1006A623F48060003859AE /* TwitterKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EC1006A223F48026003859AE /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		EC1006A323F48026003859AE /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		EC2AE5AA23E9F34C00625705 /* LongestSequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSequenceTest.swift; sourceTree = "<group>"; };
 		EC9E7AF023E1CFD8001418FA /* DelegateExampleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateExampleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9E7AF323E1CFD8001418FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1006A823F480BD003859AE /* TwitterCore.framework in Frameworks */,
+				EC1006A923F480BD003859AE /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +89,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC1006A723F480BD003859AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC9E7AE723E1CFD8001418FA = {
 			isa = PBXGroup;
 			children = (
+				EC1006A323F48026003859AE /* TwitterCore.framework */,
+				EC1006A223F48026003859AE /* TwitterKit.framework */,
 				EC9E7AF223E1CFD8001418FA /* DelegateExampleTableView */,
 				EC9E7B0923E1CFD9001418FA /* DelegateExampleTableViewTests */,
 				EC9E7AF123E1CFD8001418FA /* Products */,
+				EC1006A723F480BD003859AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +155,7 @@
 				EC9E7AEC23E1CFD8001418FA /* Sources */,
 				EC9E7AED23E1CFD8001418FA /* Frameworks */,
 				EC9E7AEE23E1CFD8001418FA /* Resources */,
+				EC1006A123F47FB8003859AE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +416,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2XWZFPH38;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DelegateExampleTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,6 +438,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T2XWZFPH38;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DelegateExampleTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
