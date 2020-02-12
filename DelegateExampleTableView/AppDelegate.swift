@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        TWTRTwitter.sharedInstance().start(withConsumerKey:"hTpkPVU4pThkM0", consumerSecret:"ovEqziMzLpUOF163Qg2mj")
+        
+        
+        // exercise the error handle test
+        let vendingMachine = VendingMachine()
+        vendingMachine.coinsDeposited = 8
+        
+       do {
+        try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
+            print("Success! Yum.")
+        } catch VendingMachineError.invalidSelection {
+            print("Invalid Selection.")
+        } catch VendingMachineError.outOfStock {
+            print("Out of Stock.")
+        } catch VendingMachineError.insufficientFunds(let coinsNeeded) {
+            print("Insufficient funds. Please insert an additional \(coinsNeeded) coins.")
+        } catch {
+            print("Unexpected error: \(error).")
+        }
+       
+        
+       // this is needed
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
     }
 
     // MARK: UISceneSession Lifecycle
