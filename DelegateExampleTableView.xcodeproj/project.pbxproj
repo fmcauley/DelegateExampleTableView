@@ -11,6 +11,7 @@
 		EC1006A823F480BD003859AE /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1006A323F48026003859AE /* TwitterCore.framework */; };
 		EC1006A923F480BD003859AE /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1006A223F48026003859AE /* TwitterKit.framework */; };
 		EC1006AB23F49A9E003859AE /* ErrorHandleExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1006AA23F49A9E003859AE /* ErrorHandleExamples.swift */; };
+		EC1006AD23F5A8D9003859AE /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1006AC23F5A8D9003859AE /* CombineViewController.swift */; };
 		EC2AE5AB23E9F34C00625705 /* LongestSequenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2AE5AA23E9F34C00625705 /* LongestSequenceTest.swift */; };
 		EC9E7AF423E1CFD8001418FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7AF323E1CFD8001418FA /* AppDelegate.swift */; };
 		EC9E7AF623E1CFD8001418FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E7AF523E1CFD8001418FA /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		EC1006A223F48026003859AE /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
 		EC1006A323F48026003859AE /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		EC1006AA23F49A9E003859AE /* ErrorHandleExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandleExamples.swift; sourceTree = "<group>"; };
+		EC1006AC23F5A8D9003859AE /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		EC2AE5AA23E9F34C00625705 /* LongestSequenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSequenceTest.swift; sourceTree = "<group>"; };
 		EC9E7AF023E1CFD8001418FA /* DelegateExampleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateExampleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9E7AF323E1CFD8001418FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				EC9E7B3823E21D41001418FA /* ParsedTweet.swift */,
 				EC9E7B3A23E22B12001418FA /* ParsedTweetCell.swift */,
 				EC1006AA23F49A9E003859AE /* ErrorHandleExamples.swift */,
+				EC1006AC23F5A8D9003859AE /* CombineViewController.swift */,
 			);
 			path = DelegateExampleTableView;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				EC9E7AF423E1CFD8001418FA /* AppDelegate.swift in Sources */,
 				EC9E7AF623E1CFD8001418FA /* SceneDelegate.swift in Sources */,
 				EC9E7B3723E21365001418FA /* MyDelegate.swift in Sources */,
+				EC1006AD23F5A8D9003859AE /* CombineViewController.swift in Sources */,
 				EC9E7B1823E1D427001418FA /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
